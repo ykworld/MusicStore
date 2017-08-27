@@ -13,7 +13,7 @@ import { NgModule } from '@angular/core';
   ],
   exports: [
     AppRoutingModule,
-    HomeComponent
+    HeaderComponent
   ],
   providers: []
 })

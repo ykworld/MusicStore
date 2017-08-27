@@ -1,3 +1,4 @@
+import { SharedModule } from './shared/shared.module';
 import { AppRoutingModule } from './../app-routing.module';
 import { CoreModule } from './core/core.module';
 import { BrowserModule } from '@angular/platform-browser';
@@ -8,7 +9,6 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { environment } from '../environments/environment';
 
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './core/header/header.component';
 
 @NgModule({
   declarations: [
@@ -17,11 +17,9 @@ import { HeaderComponent } from './core/header/header.component';
   imports: [
     BrowserModule,
     HttpClientModule,
+    SharedModule,
     AppRoutingModule,
-    CoreModule,
-    StoreRouterConnectingModule,
-    StoreDevtoolsModule,
-    !environment.production ? StoreDevtoolsModule.instrument() : []
+    CoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]
