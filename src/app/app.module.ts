@@ -1,6 +1,6 @@
-import { SharedModule } from './shared/shared.module';
+import { SharedModule } from './client/shared/shared.module';
 import { AppRoutingModule } from './app-routing.module';
-import { CoreModule } from './core/core.module';
+import { CoreModule } from './client/core/core.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
